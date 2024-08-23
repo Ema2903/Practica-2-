@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel">
+    <meta name="keywords" lang="es" content=" equitetas, html, pagina, imagen, fuentes, ">
+    <meta name="description" lang="es" content="Lista de etiquetas basicas de html para una pagina web ">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div>
+        <h1 id="Inicio">BIENESRAICES</h1>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#anuncios">Anuncio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+          </ul>
+        </nav>
+        <h2>Contactos</h2>
+        <img src="img/07e9ae27c9b9d4582cab297a63968db5.jpg" width="600" height="400" alt="foto de una casa">
+        </div>
+      </header> 
+      <main>
+        <h2>LLenar el formulario de contactos</h2>
+        <fieldset>
+            <legend>Informacion Personal</legend>
+        <div class="contenedor">
+            <form action="/enviar formulario" method="post">
+        </div>
+        <div class="formulario">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="10" placeholder="Tu Nombre">
+        </div><br>
+        <div class="formulario">
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" required  placeholder="Tu Correo Electronico">
+        </div><br>
+        <div class="formulario">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="506-7845-5466">
+        </div><br>
+        <div class="formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Escribe aqui"></textarea>
+        </fieldset><br>
+        <fieldset>
+            <legend>Informacion sobre productos</legend>
+            <label for="vender o comprar">Vender o Comprar</label><br>
+            <select name="vender o comprar" id="vender o comprar">
+                <optgroup>
+                    <option value="vender">vender</option>
+                    <option value="comprar">comprar</option>
+                </optgroup>
+            </select><br>
+            <label for="catidad">Cantidad</label>
+            <input type="text" name="cantidad" id="cantidad">
+        </fieldset><br>
+        <fieldset>
+            <legend>Contacto</legend>
+            <label for="contactos">Como ser contactado</label>
+            <input type="checkbox" id="contacto" value="telefono">Telefono
+            <input type="checkbox" id="contacto" value="e-mail">E-mail <br>
+            <p>Si eligio Telefono,elija la fecha y la hora</p>
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora">
+        </fieldset>
+        <input type="submit" value="Enviar">
+        </form><br>
+      </main> 
+      <footer>
+        <div>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#anuncios">Anuncio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p>&copy;2024 Mi pagina web.Todos los derechos reservados</p>
+      </footer>  
+</body>
+</html>
